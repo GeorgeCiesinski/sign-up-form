@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+#left {
+    max-width: 50vw;
+}
+
+#right {
+    max-width: 50vw;
+}
+
+#side-image {
+    max-width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.form-row {
+    display: flex;
+    gap: 1vw;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#button-submit {
+
+}
+
+#button-login {
+    margin: auto 0 auto 0;
+}

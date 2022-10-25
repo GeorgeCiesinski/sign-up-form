@@ -5,8 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up form</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
-    
+    <div class="container">
+        <div id="left">
+            <img id="side-image" src="images/victoria-shes-food.jpg">
+        </div>
+        <div id="right">
+            <p>This is not a real website, but it could be! If you think you have some dope recipes and would like to contribute to this site, sign up below!</p>
+            <form action="example.com/path" method="post">
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="first-name">First name:</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="John">        
+                    </div>
+                    <div class="form-column">
+                        <label for="last-name">last name:</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Smith">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="user-email">Email:</label>
+                        <input type="email" id="user-email" name="user-email" placeholder="example@email.com">
+                    </div>
+                    <div class="form-column">
+                        <label for="phone-number">Phone:</label>
+                        <input type="phone" id="phone-number" name="phone-number" placeholder="123-456-7890">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="user-password">Password:</label>
+                        <input type="password" id="user-password" name="user-password">
+                    </div>
+                    <div class="form-column">
+                        <label for="retype-password">Retype Password:</label>
+                        <input type="password" id="retype-password" name="retype-password">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <button id="button-submit" type="submit">Create Account</button>
+                    <p>Already got an account?</p>
+                    <a id="button-login" href="#">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
