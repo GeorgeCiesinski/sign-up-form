@@ -13,15 +13,27 @@ body {
 
 // Left Side
 #left {
-    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
     overflow: hidden;
 }
 
 #side-image {
     position: absolute;
-    right: 50vw;
+    right: 65vw;
     height: 200vh;
     z-index: -1;
+}
+
+#logo-background {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#title {
+    color: white;
+    opacity: 100%;
 }
 
 // Right Side
@@ -29,7 +41,7 @@ body {
 #right {
     display: flex;
     flex-direction: column;
-    max-width: 50vw;
+    max-width: 65vw;
     align-items: center;
     justify-content: center;
     background-color: whitesmoke
