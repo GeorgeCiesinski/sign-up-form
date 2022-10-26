@@ -12,7 +12,10 @@
         <div id="left">
             <img id="side-image" src="images/victoria-shes-food.jpg">
             <div id="logo-background">
-                <h1 id="title">Website Title</h1>
+                <span id="bowl" class="fa-4x">
+                    <i class="fa-solid fa-utensils" data-fa-transform="shrink-7" data-fa-mask="fa-solid fa-bowl-food"></i>
+                </span>
+                <h1 id="title">Blog-free Recipes</h1>
             </div>
         </div>
         <div id="right">
@@ -22,31 +25,31 @@
                     <div class="form-row">
                         <div class="form-column">
                             <label for="first-name">*First name:</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="John">        
+                            <input class="form-input regular-field" type="text" id="first-name" name="first-name" placeholder="John" onkeyup="checkField();" required>        
                         </div>
                         <div class="form-column">
                             <label for="last-name">*Last name:</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Smith">
+                            <input class="form-input regular-field" type="text" id="last-name" name="last-name" placeholder="Smith" onkeyup="checkField();" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-column">
                             <label for="user-email">*Email:</label>
-                            <input type="email" id="user-email" name="user-email" placeholder="example@email.com">
+                            <input class="form-input regular-field" type="email" id="user-email" name="user-email" placeholder="example@email.com" onkeyup="checkField();" required>
                         </div>
                         <div class="form-column">
-                            <label for="phone-number">*Phone:</label>
-                            <input type="phone" id="phone-number" name="phone-number" placeholder="123-456-7890">
+                            <label for="phone-number">Phone:</label>
+                            <input class="form-input regular-field" type="tel" id="phone-number" name="phone-number" placeholder="123-456-7890" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" onkeyup="checkField();">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-column">
                             <label for="user-password">*Password:</label>
-                            <input type="password" id="user-password" name="user-password">
+                            <input class="form-input regular-field" type="password" id="user-password" name="user-password" onkeyup="checkPass();" required>
                         </div>
                         <div class="form-column">
                             <label for="confirm-password">*Confirm Password:</label>
-                            <input type="password" id="confirm-password" name="confirm-password">
+                            <input class="form-input password-field" type="password" id="confirm-password" name="confirm-password" onkeyup="checkPass();" required>
                         </div>
                     </div>
                     <div class="form-row">
@@ -60,5 +63,7 @@
             </div>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/99b64d7ede.js" crossorigin="anonymous"></script>
+    <script src="javascript/sign-up.js"></script>
 </body>
 </html>

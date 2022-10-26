@@ -16,13 +16,24 @@ body {
   overflow: hidden; }
 
 #side-image {
-  position: absolute;
+  position: fixed;
   right: 65vw;
   height: 200vh;
   z-index: -1; }
 
 #logo-background {
-  background-color: rgba(0, 0, 0, 0.5); }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2vw 0; }
+
+#bowl {
+  color: white; }
+
+#cutlery {
+  color: #2675bf; }
 
 #title {
   color: white;
@@ -49,16 +60,30 @@ form {
 #form-interior {
   display: flex;
   flex-direction: column;
-  padding: 4vh 4vw;
-  gap: 1vh; }
+  padding: 2vh 2vw;
+  gap: 10px; }
 
 .form-row {
   display: flex;
-  gap: 1vw; }
+  gap: 10px; }
 
 .form-column {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  gap: 2px;
+  max-width: 350px;
+  width: 25vw; }
+
+.form-input {
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 30px; }
+
+.form-input-full:valid {
+  border-color: green; }
+
+.form-input-full:invalid {
+  border-color: red; }
 
 #login-div {
   display: flex;
