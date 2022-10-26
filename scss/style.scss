@@ -98,11 +98,11 @@ form {
     height: 30px;
 }
 
-.form-input-full:valid {
+.form-input-full:valid, .pass-valid {
     border-color: green;
 }
 
-.form-input-full:invalid {
+.form-input-full:invalid, .pass-invalid {
     border-color: red;
 }
 

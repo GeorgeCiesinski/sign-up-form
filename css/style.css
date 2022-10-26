@@ -79,10 +79,10 @@ form {
   border-radius: 5px;
   height: 30px; }
 
-.form-input-full:valid {
+.form-input-full:valid, .password-valid {
   border-color: green; }
 
-.form-input-full:invalid {
+.form-input-full:invalid, .password-invalid {
   border-color: red; }
 
 #login-div {
