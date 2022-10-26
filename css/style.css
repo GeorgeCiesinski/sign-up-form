@@ -11,23 +11,25 @@ body {
 #left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   width: 35vw;
   overflow: hidden; }
 
 #side-image {
   position: fixed;
   right: 65vw;
-  height: 200vh;
+  height: 150vh;
   z-index: -1; }
 
 #logo-background {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   gap: 1vw;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 2vw 0; }
+  padding: 4vw 0; }
 
 #bowl {
   color: white; }
@@ -39,28 +41,37 @@ body {
   color: white;
   opacity: 100%; }
 
+#photo-credit {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  text-align: center; }
+
+#photo-credit > p > a, #photo-credit > p > a:visited {
+  color: white; }
+
 #right {
   display: flex;
   flex-direction: column;
-  max-width: 65vw;
-  align-items: center;
+  width: 65vw;
   justify-content: center;
   background-color: whitesmoke; }
 
+form, #site-description, #div-login {
+  padding-left: 4vmin; }
+
 #site-description {
-  padding: 4vh 4vw; }
+  padding-bottom: 2vmin; }
 
 form {
   background-color: white;
-  width: 100%;
   display: flex;
-  justify-content: center;
   box-shadow: 5px 5px 5px lightgrey; }
 
 #form-interior {
   display: flex;
   flex-direction: column;
-  padding: 2vh 2vw;
+  padding: 2vh 0px;
   gap: 10px; }
 
 .form-row {
@@ -85,11 +96,21 @@ input {
 .form-input-full:invalid, .pass-invalid {
   border-color: red; }
 
-#login-div {
+#button-submit {
+  --button-color: rgb(84, 34, 28);
+  border: 2px solid var(--button-color);
+  background-color: var(--button-color);
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 110%;
+  margin-top: 25px; }
+
+#div-login {
   display: flex;
   gap: 1vw; }
 
-#button-login {
+#link-login {
   margin: auto 0 auto 0; }
 
 /*# sourceMappingURL=style.css.map */

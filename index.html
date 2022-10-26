@@ -11,17 +11,26 @@
     <div class="container">
         <div id="left">
             <img id="side-image" src="images/victoria-shes-food.jpg">
+            <div>
+                <!-- Empty Div for space-between to work correctly -->
+            </div>
             <div id="logo-background">
                 <span id="bowl" class="fa-4x">
                     <i class="fa-solid fa-utensils" data-fa-transform="shrink-7" data-fa-mask="fa-solid fa-bowl-food"></i>
                 </span>
                 <h1 id="title">Blog-free Recipes</h1>
             </div>
+            <div id="photo-credit">
+                <p><a href="https://unsplash.com/photos/UC0HZdUitWY">Photo by Victoria Shes</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            </div>
         </div>
         <div id="right">
             <h2 id="site-description">This is not a real website, but it could be! If you think you have some dope recipes and would like to contribute to this site, sign up below!</h2>
-            <form action="http://httpbin.org/post" method="post">
+            <form id="sign-up-form" action="http://httpbin.org/post" method="post">
                 <div id="form-interior">
+                    <div class="form-row">
+                        <h3>Sign up now!</h3>
+                    </div>
                     <div class="form-row">
                         <div class="form-column">
                             <label for="first-name">First name:</label>
@@ -57,9 +66,9 @@
                     </div>
                 </div>
             </form>
-            <div id="login-div">
+            <div id="div-login">
                 <p>Already got an account?</p>
-                <a id="button-login" href="#">Login</a>
+                <a id="link-login" href="#">Login</a>
             </div>
         </div>
     </div>
