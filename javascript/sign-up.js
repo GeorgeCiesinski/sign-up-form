@@ -44,7 +44,7 @@ const checkPass = function(event) {
 
 // Get elements
 const regularFields = document.querySelectorAll(".regular-field");
-const confirmField = document.querySelector(".confirm-field");
+const confirmField = document.querySelector("#confirm-password");
 const userPassword = document.querySelector("#user-password");
 
 // Add event listeners

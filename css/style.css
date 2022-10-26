@@ -74,15 +74,15 @@ form {
   max-width: 350px;
   width: 25vw; }
 
-.form-input {
+input {
   border: 2px solid black;
   border-radius: 5px;
-  height: 30px; }
+  font-size: 125%; }
 
-.form-input-full:valid, .password-valid {
+.form-input-full:valid, .pass-valid {
   border-color: green; }
 
-.form-input-full:invalid, .password-invalid {
+.form-input-full:invalid, .pass-invalid {
   border-color: red; }
 
 #login-div {
